@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="icon" href="./img/designbyinie.png">
+    <title>Introduction to JavaScript</title>
+</head>
+<body>
+    <h1>Introduction to JavaScript</h1>
+
+    <h2>What Can JavaScript Do?</h2>
+    <strong>
+        <p id="demo">JavaScript can change HTML content.</p>
+    </strong>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello JavaScript!'">Click Me!</button>
+
+    <hr>
+    
+    <h3>JavaScript can change HTML attribute values.</h3>
+
+    <p>
+        In this case JavaScript changes the value of the src (source) attribute of an image.
+    </p>
+    <button onclick = "document.getElementById('myImage').src='./img/bulb_on.png'">Turn on the light</button>
+
+    <img id="myImage" src="./img/bulb_off.png" alt="bulb_off" style="width:100px">
+
+    <button onclick="document.getElementById('myImage').src='./img/bulb_off.png'">Turn off the light</button>
+
+    <hr>
+    
+    <h3 id="enlarge">JavaScript can change the CSS style</h3>
+    <button type="button" onclick="document.getElementById('enlarge').style.fontSize='35px'">Click me!</button>
+
+    <hr>
+
+    <h3 id="hide">JavaScript can hide HTML elements!</h3>
+    <button type="button" onclick="document.getElementById('hide').style.display='none'">Click me!</button>
+
+    <hr>
+    <h3 id="show" style="display:none">Hello JavaScript</h3>
+    <button type="button" onclick="document.getElementById('show').style.display='block'">Click me!</button>
+    <hr>
+    
+    <footer>
+        &lt;&lt;&lt; &copy; <a href="#"><abbr title="designbyinie Technologies">dbiTech</abbr></a> &gt;&gt;&gt;
+    </footer>
+</body>
+<script src="./JS/main.js"></script>
+</html>
