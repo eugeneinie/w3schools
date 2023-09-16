@@ -40,13 +40,45 @@
     <button type="button" onclick="document.getElementById('hide').style.display='none'">Click me!</button>
 
     <hr>
+
     <h3 id="show" style="display:none">Hello JavaScript</h3>
     <button type="button" onclick="document.getElementById('show').style.display='block'">Click me!</button>
+
     <hr>
-    
+
+    <h2>JavaScript Display Possibilities</h2>
+    <h3>The .innerHTML</h3>
+    <p id="innerH">Hi text family, I'm gonna get replaced!</p>
+    <button type="button" onclick="document.getElementById('innerH').innerHTML='Yo! I am the new kid in the block, so...get off my turf!'">#newkid clicks</button>
+
+    <hr>
+
+    <h3>The dreaded document.write ...#thegrimreaper of all HTML documents</h3>
+    <p>The document.write should only be used for testing purposes</p>
+    <script>
+        // document.write(5 + 8)
+    </script>
+
+    <hr>
+
+    <h3>The window.alert</h3>
+    <script>
+        // window.alert(8*8)
+        // or
+        alert(5*5)
+    </script>
+
+    <hr>
+    <h3>The console.log()</h3>
+    <p>It's main use is debugging</p>
+    <script>
+        console.log(10*10)
+    </script>
+    <hr>
+
     <footer>
         &lt;&lt;&lt; &copy; <a href="#"><abbr title="designbyinie Technologies">dbiTech</abbr></a> &gt;&gt;&gt;
     </footer>
 </body>
-<script src="./JS/main.js"></script>
+<script src="./JS/script.js"></script>
 </html>
